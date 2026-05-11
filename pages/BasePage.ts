@@ -9,14 +9,5 @@ constructor(page:Page){
 async navigate(url:string){
     await this.page.goto(url)
 }
-async click(locator:Locator){
-    await locator.click()
-}
-async fill(locator:Locator,value:string){
-    await locator.fill(value)
-}
-async isVisible(locator:Locator){
-    return await locator.isVisible()
-}
 
 }
