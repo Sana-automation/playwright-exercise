@@ -1,7 +1,7 @@
 # Playwright Automation Exercise
 This project contains automated UI tests built using Playwright with Typescript and Page Object Model (POM).
 ## Framework Structure
-- pages/ -> Page Object classes
+- pages/ -> Page Object classes(HomePage, ProductPage, CartPage, ContactUsPage)
 - tests/ -> Test files
 - utiles/ -> Test data files
 
@@ -13,3 +13,13 @@ This project contains automated UI tests built using Playwright with Typescript 
 Install dependencies:
 ```bash
 npm install
+npx playwright install
+```
+## Run Tests
+```bash
+npx playwright run
+```
+## Test Suites
+- `product-Search.spec.ts` | Search for the product and verifies the result
+- `contact-Form.spec.ts`   | Fill the contact form and verifies the success message
+- `add-to-cart.spec.ts`    | Add to 2 products to the cart and verifies the items count

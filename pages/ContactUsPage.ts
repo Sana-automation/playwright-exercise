@@ -18,7 +18,7 @@ constructor(page:Page){
     this.enterSubjectTextBox=page.getByPlaceholder('Subject')
     this.enterMessageTextBox=page.locator('#message')
     this.submitBtn=page.locator('input[value="Submit"]')
-    this.msgText=page.locator('div.alert-success')
+    this.msgText=page.locator('div.status.alert.alert-success')
 }
 async navigateToContactTab(){
     await this.contactTab.click()
@@ -37,5 +37,5 @@ async submitTheForm(){
     await this.submitBtn.click()
 }
 async verifyTheMessage(){
-    await expect(this.msgText.first()).toContainText('Success! Your details have been submitted successfully.')
+    await expect(this.msgText).toHaveText('Success! Your details have been submitted successfully.')
 }}module.exports={ContactUsPage}
