@@ -3,7 +3,7 @@ import { POManager } from "../pages/PageObjectManager"
 import dataset from"../testdata/testData.json"
 
 for(const data of dataset)
-test.only(`Add To Cart ${data.url}`,async ({page})=>{
+test(`Add To Cart ${data.url}`,async ({page})=>{
     const poManager=new POManager(page)
     await poManager.getHomePage().goToUrl(data.url)
     await poManager.getProductsPage().clickOnProductTab()
