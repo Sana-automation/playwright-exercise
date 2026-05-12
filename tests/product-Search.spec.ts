@@ -1,8 +1,6 @@
 import { test} from "@playwright/test";
 import { POManager } from "../pages/PageObjectManager";
-//import { HomePage } from "../pages/HomePage";
-//const dataset=JSON.parse(JSON.stringify(require('../utils/testData.json')))
-import dataset from "../utils/testData.json"
+import dataset from "../testdata/testData.json"
 
 for(const data of dataset){
 test(`Product-Search Functionlity ${data.productName,data.url}`,async ({page})=>{

@@ -1,6 +1,6 @@
 import{test} from "@playwright/test"
 import { POManager } from "../pages/PageObjectManager"
-import dataset from "../utils/testData.json"
+import dataset from "../testdata/testData.json"
 
 for(const data of dataset){
     test(`Contact Form Submission ${data.username,data.email,data.subject,data.message,data.url}`,async ({page})=>{

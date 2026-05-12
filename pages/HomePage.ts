@@ -15,7 +15,6 @@ constructor(page:Page){
 
 async goToUrl(url:string){
 await this.page.goto(url)
-// Accept cookies
 if (await this.acceptButton.isVisible()) {
     await this.acceptButton.click();
   }

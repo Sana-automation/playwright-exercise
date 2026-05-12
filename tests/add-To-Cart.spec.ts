@@ -1,10 +1,9 @@
 import{test} from "@playwright/test"
 import { POManager } from "../pages/PageObjectManager"
-//import dataset from "../utils/testData.json"
-import dataset from"../utils/testData.json"
+import dataset from"../testdata/testData.json"
 
 for(const data of dataset)
-test(`Add To Cart ${data.url}`,async ({page})=>{
+test.only(`Add To Cart ${data.url}`,async ({page})=>{
     const poManager=new POManager(page)
     await poManager.getHomePage().goToUrl(data.url)
     await poManager.getProductsPage().clickOnProductTab()
