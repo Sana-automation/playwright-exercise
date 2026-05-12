@@ -17,7 +17,7 @@ npx playwright install
 ```
 ## Run Tests
 ```bash
-npx playwright run
+npx playwright test
 ```
 ## Test Suites
 - `product-Search.spec.ts` | Search for the product and verifies the result
