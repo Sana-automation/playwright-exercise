@@ -3,7 +3,7 @@ This project contains automated UI tests built using Playwright with Typescript 
 ## Framework Structure
 - pages/ -> Page Object classes(HomePage, ProductPage, CartPage, ContactUsPage)
 - tests/ -> Test files
-- utiles/ -> Test data files
+- testdata/ -> Test data files
 
 ## Prerequisites
 - Node.js v18+
