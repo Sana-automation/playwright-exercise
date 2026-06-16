@@ -30,5 +30,4 @@ export class ProductsPage{
         await expect(this.productText.nth(2)).toContainText(productName)
     }
 
-
 }module.exports={ProductsPage}
