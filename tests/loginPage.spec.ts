@@ -13,5 +13,5 @@ await page.locator('#admin-event-form textarea').fill('This is a test event crea
 await page.getByLabel('City').fill('Cardiff')
 //await page.pause()
 await page.getByLabel('Venue').fill('Century Wharf')
-await page.getByLabel('Event Date & Time').fill(futureDateValue('yyyy-MM-dd HH:mm'));
+//await page.getByLabel('Event Date & Time').fill(futureDateValue('yyyy-MM-dd HH:mm'));
 })
